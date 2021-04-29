@@ -1,35 +1,27 @@
+# docker-compose.yml
 version: "3.6"
 services:
   ojs:
-    build:
-      context: .
-      args:
-        tag_name: "ojs-3_3_0-5"
-        repo_url: "https://github.com/pkp/ojs.git"
+    image: teic/docker-pkp-ojs
     ports: 
       - 8181:80
     environment: 
-      - PKP_GENERAL_INSTALLED=Off
       - PKP_DATABASE_DRIVER=mysqli
-      - PKP_DATABASE_HOST=mysql
+      - PKP_DATABASE_HOST=ojsdb
       - PKP_DATABASE_USERNAME=ojs
       - PKP_DATABASE_PASSWORD=ojs
       - PKP_DATABASE_NAME=ojs
-  mysql:
-    image: mysql:5.7
+    restart: unless-stopped
+  ojsdb:
+    image: mariadb:10
     volumes:
       - db_data:/var/lib/mysql
     environment: 
       - MYSQL_DATABASE=ojs
       - MYSQL_USER=ojs
       - MYSQL_PASSWORD=ojs
-      - MYSQL_ROOT_PASSWORD=root
-  pma:
-    image: phpmyadmin/phpmyadmin:4.8
-    ports: 
-      - 8182:80
-    environment: 
-      - PMA_HOST=mysql
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+    restart: unless-stopped
 
 volumes: 
   db_data:
