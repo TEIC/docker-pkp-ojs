@@ -38,9 +38,10 @@ services:
       - PKP_DATABASE_USERNAME=ojs
       - PKP_DATABASE_PASSWORD=ojs
       - PKP_DATABASE_NAME=ojs
+      - PKP_EMAIL_DEFAULT=sendmail
     restart: unless-stopped
   ojsdb:
-    image: mariadb:10
+    image: mariadb:11
     volumes:
       - db_data:/var/lib/mysql
     environment: 
