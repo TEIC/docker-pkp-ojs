@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:8-apache
 
 ENV APP_DIR=/var/www/html \
     TMP_DIR=/tmp
