@@ -18,12 +18,12 @@ jobs:
                 3.4
                 3.4.0
                 latest
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.4.0-3.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.4.0-4.tar.gz
           - IMAGE_TAG: |
                 3.3
                 3.3.0
                 lts
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.3.0-15.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.3.0-16.tar.gz
     permissions:
       contents: read
       packages: write
