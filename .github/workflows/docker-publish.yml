@@ -23,7 +23,7 @@ jobs:
                 3.3
                 3.3.0
                 lts
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.3.0-16.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.3.0-17.tar.gz
     permissions:
       contents: read
       packages: write
