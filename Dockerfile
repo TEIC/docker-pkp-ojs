@@ -17,7 +17,7 @@ COPY files/* ${TMP_DIR}/
 
 RUN apt-get update \
     && apt-get dist-upgrade -y \
-    && apt-get install -y --no-install-recommends libxml2-dev \
+    && apt-get install -y --no-install-recommends libxml2-dev libzip-dev libpng-dev zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mv ${TMP_DIR}/config-creator.php /bin/config-creator \
