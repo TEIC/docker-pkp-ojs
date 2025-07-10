@@ -17,7 +17,7 @@ jobs:
                 3.5
                 3.5.0
                 latest
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-0.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-1.tar.gz
           - IMAGE_TAG: |
                 3.4
                 3.4.0
