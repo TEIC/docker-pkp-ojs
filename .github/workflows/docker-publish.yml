@@ -15,11 +15,11 @@ jobs:
         include:
           - IMAGE_TAG: |
                 latest
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-4.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-5.tar.gz
           - IMAGE_TAG: |
                 3.5
                 3.5.0
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-3.tar.gz
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-4.tar.gz
           - IMAGE_TAG: |
                 3.4
                 3.4.0
