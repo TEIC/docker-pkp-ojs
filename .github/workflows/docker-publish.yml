@@ -14,21 +14,16 @@ jobs:
       matrix:
         include:
           - IMAGE_TAG: |
-                latest
+              latest
+              lts
+              3
+              3.5
+              3.5.0
             BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-5.tar.gz
           - IMAGE_TAG: |
-                3.5
-                3.5.0
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.5.0-4.tar.gz
-          - IMAGE_TAG: |
-                3.4
-                3.4.0
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.4.0-10.tar.gz
-          - IMAGE_TAG: |
-                3.3
-                3.3.0
-                lts
-            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.3.0-22.tar.gz
+              3.4
+              3.4.0
+            BINARY: https://pkp.sfu.ca/ojs/download/ojs-3.4.0-11.tar.gz
     permissions:
       contents: read
       packages: write
